@@ -1,0 +1,34 @@
+{
+  "name": "freshwater",
+  "version": "1.0.0",
+  "description": "Water treatment process code and user interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChikaIke/freshwater.git"
+  },
+  "keywords": [
+    "water",
+    "treatment",
+    "water",
+    "treatment",
+    "purification",
+    "beaglebone",
+    "bonescript"
+  ],
+  "author": "Joy Ike",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChikaIke/freshwater/issues"
+  },
+  "homepage": "https://github.com/ChikaIke/freshwater#readme",
+  "dependencies": {
+    "bonescript": "^0.7.4-beta1",
+    "express": "^4.17.1",
+    "socket.io": "^1.4.5"
+  }
+}

@@ -35,7 +35,6 @@
                 </div>
             </div>
 
-<<<<<<< HEAD
             <!-- Content-->
           <div class="col-lg-8">
             <div class="d-flex flex-column h-100 bg-light rounded-3 shadow-lg p-4">
@@ -45,19 +44,12 @@
                   <h1 class="h3 mb-2 text-nowrap">Profile info</h1><a class="btn btn-link text-danger fw-medium btn-sm mb-2" href="#"><i class="ai-trash-2 fs-base me-2"></i>Delete account                        </a>
                 </div>
                 <!-- Content-->
-                <div class="bg-secondary rounded-3 p-4 mb-4">
-                  <div class="d-block d-sm-flex align-items-center"><img class="d-block rounded-circle mx-sm-0 mx-auto mb-3 mb-sm-0" src="img/dashboard/avatar/main.jpg" alt="Amanda Wilson" width="110">
-                    <div class="ps-sm-3 text-center text-sm-start">
-                      <button class="btn btn-light shadow btn-sm mb-2" type="button"><i class="ai-refresh-cw me-2"></i>Change avatar</button>
-                      <div class="p mb-0 fs-ms text-muted">Upload JPG, GIF or PNG image. 300 x 300 required.</div>
-                    </div>
-                  </div>
-                </div>
+                
                 <div class="row">
                     <div class="col-lg-6"></div>
                     
-                        <div class="d-flex align-items-center border-top"><button type="button" class="btn btn-primary">Run Preliminary Checks</button></div>
-                        <div class="d-flex align-items-center border-top"><button type="button" class="btn btn-primary">Start water pump</button><a class="d-block w-100 nav-link-style px-4 py-3">Auto-stop</a>
+                        <div class="d-flex align-items-center border-top"><button type="button" class="btn btn-primary" id="precheck" value="1" onclick="runPrem()">Run Preliminary Checks</button></div>
+                        <div class="d-flex align-items-center border-top"><button type="button" class="btn btn-primary" id="start" value="2" onclick="runStart()">Start water pump</button><a class="d-block w-100 nav-link-style px-4 py-3">Auto-stop</a>
                                 <div class="ms-auto px-3">
                                     <div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" id="notifications-switch" data-master-checkbox-for="#notification-settings" checked>
@@ -65,7 +57,7 @@
                                     </div>
                                 </div>
                                 </div></li>
-                        <div class="d-flex align-items-center border-top"><button type="button" class="btn btn-primary">Stop water pump</button></div>
+                        <div class="d-flex align-items-center border-top"><button type="button" class="btn btn-primary" id="stop" value="3" onclick="runStop()">Stop water pump</button></div>
                     
                 </div>
               </div>
@@ -73,11 +65,6 @@
           </div>
         </div>
     </div>
-=======
-    <h2>Watermaker Console</h2>
-
-
->>>>>>> 80aecff295a0326bffa0bc67f611b5d42fd87f46
 
 <!-- Footer-->
 <footer class="footer py-4">
@@ -97,5 +84,6 @@
   <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   <!-- Main theme script-->
   <script src="js/theme.min.js"></script>
+  <script type="application/javascript" src="./js/index.js"></script>
 </body>    
 </html>
